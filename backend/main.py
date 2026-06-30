@@ -29,7 +29,7 @@ API_KEY = os.getenv("GEMMINI_API_KEY")
 
 genai.configure(api_key = API_KEY)
 
-model = genai.GenerativeModel("gemini-2.5-flash-lite")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 class PromptRequest(BaseModel):
     prompt: str
